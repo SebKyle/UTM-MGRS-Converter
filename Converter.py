@@ -89,16 +89,19 @@ def MGRSToUTMConverter():
 def mainFunction():
     
     print("What would you like to use? \n(1): Manual UTM to MGRS Converter. \n(2): Manual MGRS to UTM converter \n(3): Automated Excel sheet UTM to MGRS Converter \n(4): Automated Excel sheet MGRS to UTM converter")
-    conversionSelector = int(input("Select an option: "))
-    if conversionSelector == 1:
-        userInputConverterUTMToMGRS()
-    elif conversionSelector == 2:
-        userInputConverterMGRSToUTM()
-    elif conversionSelector == 3:
-        UTMToMGRSConverter()
-    elif conversionSelector == 4:
-        MGRSToUTMConverter()
-    else:
+    try:
+        conversionSelector = int(input("Select an option: "))
+        if conversionSelector == 1:
+            userInputConverterUTMToMGRS()
+        elif conversionSelector == 2:
+            userInputConverterMGRSToUTM()
+        elif conversionSelector == 3:
+            UTMToMGRSConverter()
+        elif conversionSelector == 4:
+            MGRSToUTMConverter()
+        else:
+            print("INVALID INPUT")
+    except ValueError: 
         print("INVALID INPUT")
 
 mainFunction()
