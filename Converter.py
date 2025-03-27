@@ -9,7 +9,7 @@ from openpyxl.utils import column_index_from_string
 #in order to change the workbook change the filepath below 
 #YOU HAVE TO USE \\ INSTEAD OF / WHENEVER SELECTING FILE PATH OR IT WILL NOT WORK
 #don't delete the # symbols as that will also break how the code works
-workbook = openpyxl.load_workbook('C:\\Users\\Jochuah Kyle\\Desktop\\Coding Stuff\\UTM to MGRS Python Converter\\UTM TEST FILE.xlsx')
+workbook = openpyxl.load_workbook('C:\\users\\Username\\filepath.xlsx')
 columnLetter = column_index_from_string('G')
 def userInputConverterUTMToMGRS():
     convert = mgrs.MGRS()
@@ -49,8 +49,8 @@ def UTMToMGRSConverter():
                 #converting
                 mgrs_coordinates = convert.UTMToMGRS(utm_zone,utm_hemisphere,utm_easting,utm_northing)
                 cell.value = cell.value.replace(cellValue, mgrs_coordinates)
-    #If you wish to have it output to a different path change here
-    workbook.save('C:\\Users\\Jochuah Kyle\\Desktop\\Coding Stuff\\UTM to MGRS Python Converter\\Converted To MGRS.xlsx')
+    #If you wish to have it output to a different path change here. If not, set it as the same file path as above
+    workbook.save('C:\\Users\\Username\\Seperate Name')
                 
 
 def MGRSToUTMConverter():
