@@ -1,6 +1,6 @@
 # Created by Jochuah Kyle
 #Converts between UTM and MGRS for an Army Mission Commmand System, works for a specific format, but also has tools to convert with user input
-#code can be adjusted to work for other system, it is specifically formatted to work with an import function on the AFATDS (Advanced Field Artillery Tactical Data Set)
+#code can be adjusted to work for other system, it is specifically formatted to work with an import function on the AFATDS (Advanced Field Artillery Tactical Data System)
 # before using do pip install --upgrade pip, pip install openpyxl, pip install mgrs if you have not already
 import openpyxl
 import mgrs
