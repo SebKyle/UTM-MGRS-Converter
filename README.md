@@ -1,27 +1,38 @@
-# Converter for UTM to MGRS, MGRS to UTM with integration with excel for the AFATDS
+# Converter for UTM to MGRS, MGRS to UTM with Excel Integration for AFATDS
 
-This Repository is used specifially for importing and exporting graphics with the AFATDS Army Mission Command System
-It uses a python script to convert from UTM to MGRS and MGRS to UTM 
---------------------------------------------------------------------------------------------------------------------------
-**DEPENDECIES:**
-Python
-Python MGRS module
-Python Openpyxl module
+This repository is specifically designed for importing and exporting graphics with the AFATDS (Army Fire Support Command and Control System) in the Army Mission Command System. It uses a Python script to convert between UTM (Universal Transverse Mercator) and MGRS (Military Grid Reference System) coordinates.
 
-**How to install dependencies:** 
-First ensure you're using the latest version of python: 
-pip install --upgrade pip
+## Dependencies:
+- Python
+- Python MGRS module
+- Python OpenPyXL module
+
+## How to Install Dependencies:
+
+1. **Ensure you’re using the latest version of Python**:
+   ```bash
+   pip install --upgrade pip
 
 
-**If you do not have python installed:**
+2. **If you do not have python installed**:
 Be sure to install it from the Python official Website if on windows.
-Linux(Unbuntu/Debian based): sudo apt update & sudo apt install python3
-Linux(Fedora-based, using dnf): sudo dnf install python3
-Linux(Arch-based using Pacman): sudo pacman -S python3
-MacOS: brew install python
+- Linux(Unbuntu/Debian based):
+  ```bash
+  sudo apt update & sudo apt install python3
+- Linux(Fedora-based, using dnf):
+  ```bash
+  sudo dnf install python3
+- Linux(Arch-based using Pacman):
+  ```bash
+  sudo pacman -S python3
+- MacOS:
+  ```bash
+  brew install python
 
-**Install openpyxl:**
-pip install openpyxl 
+3. **Install openpyxl**:
+   ```bash
+   pip install openpyxl 
 
-**Install MGRS module:** 
-pip install mgrs
+4. **Install MGRS module**:
+   ```bash
+     pip install mgrs
