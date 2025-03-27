@@ -1,6 +1,6 @@
 # Converter for UTM to MGRS, MGRS to UTM with Excel Integration for AFATDS
 
-This repository is specifically designed for importing and exporting graphics with the AFATDS (Army Fire Support Command and Control System) in the Army Mission Command System. It uses a Python script to convert between UTM (Universal Transverse Mercator) and MGRS (Military Grid Reference System) coordinates.
+This repository is specifically designed for importing and exporting graphics with the AFATDS (Advanced Field Artillery Tactical Data System) in the Army Mission Command System. It uses a Python script to convert between UTM (Universal Transverse Mercator) and MGRS (Military Grid Reference System) coordinates.
 
 ## Dependencies:
 - Python
